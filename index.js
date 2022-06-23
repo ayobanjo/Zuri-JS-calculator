@@ -1,0 +1,26 @@
+// simple js calculator
+
+// Choose operation to perform
+const operator = prompt("Enter operator ( either +, -, * or / ): ");
+
+const number1 = parseFloat(prompt("Enter first number: "));
+const number2 = parseFloat(prompt("Enter second number: "));
+
+let result;
+
+if (operator == "+") {
+  result = number1 + number2;
+} else if (operator == "-") {
+  result = number1 - number2;
+} else if (operator == "*") {
+  result = number1 * number2;
+} else if (operator == "/") {
+  result = number1 / number2;
+} else {
+  alert("Invalid Operator");
+}
+
+// display the result
+console.log(`number 1 = ${number1}`);
+console.log(`number 2 = ${number2}`);
+console.log(`${number1} ${operator} ${number2} = ${result}`);
